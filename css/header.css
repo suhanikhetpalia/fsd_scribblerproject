@@ -4,41 +4,49 @@
   justify-content: space-between;
   margin: 10px;
 }
-
-.title-container{
+.title{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.blue-button{
-  background-color: blue;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 5px;
-  padding-left:5px;
-  color:white;
-  font-family: 'Ubuntu Condensed';
-  font-size: 14px;
-}
-
-.title{
+.headingname{
+  color : blue;
   font-family: 'Satisfy', cursive;
   font-size: 30px;
-  color: blue;
-  margin: 0;
+  margin: 0px;
+  display: inline;
+}
+.subheading{
+  font-family: 'Satisfy', cursive;
+  font-size: 10px;
+  color : black;
+  margin-top: 0px;
 }
 
-.sub-title{
-  font-family: 'Marck Script', cursive;
-  font-size: 10;
-  color: black;
-  margin: 0;
+.headerbutton{
+  color: white;
+  padding : 8px 8px ;
+  background-color: blue;
+  margin-left: 5px;
+  font-size : 13px;
 }
 
-.login-buttons-container{
-  padding: 10px;
+.middleheader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 1350px;
 }
+.Mainbutton{
+      margin: 5px;
+      padding : 10px;
+      background-color: #E4D00A	;
+
+
+}
+
+
 
 .modal {
   display: none;
