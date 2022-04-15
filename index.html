@@ -12,8 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+
    <style>
     body
     {
@@ -38,13 +37,13 @@
 </div>
 
 
-<div class="middleheader">
-    <button class="Mainbutton">All Posts</button>
-    <button class="Mainbutton">Create Post</button>
+<div class="postButton">
+    <button onclick="blogList()" class="Mainbutton" type="button">All Posts</button>
+    <button onclick="createPost()" class="Mainbutton" type="button">Create Post</button>
 </div>
 
 <div>
-     <div class="modal" id="signin-modal">
+     <div class="modal" id="signinmodal">
        <div class="modal-content">
           <div class="modal-head">
           <span onclick="hideSignInModal()" id="close" class="close">&times;</span>
@@ -65,7 +64,7 @@
 </div>
 
 <div>
-    <div class="modal" id="signup-modal">
+    <div class="modal" id="signupmodal">
       <div class="modal-content">
         <div class="modal-head">
         <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
@@ -88,31 +87,25 @@
 </div>
 
 <div>
-  <!-- Insert code for Create Post modal here -->
-  <div class="modal" id="create-post-modal">
-
-    <div class="post-modal-content">
-
-      <div class="modal-head">
+    <div class="modal" id="createpostmodal">
+      <div class="postmodal">
+        <div class="modal-head">
         <span onclick="hideCreatePostModal()" id="close" class="close">&times;</span>
-        <h2 class="modal-title">Pen your post</h2>
-      </div>
-      <form id=create-post-form>
-        <label for="tile" class="label-text">Title</label>
-        <input type="text" id="title" placeholder="" required>
-        <label for="content" class="label-text">Content</label>
-        <textarea cols="50" rows="15" name="post-details" form="create-post-form"></textarea>
-        <button type="submit" onclick="createPost()" class="create-btn">Create</button>
-      </form>
+        <h2 class="posttitle">Pen Your Post</h2>
+        </div>
+        <form id=create-post-form>
+          <label for="title" class="label-text">Title</label>
+          <input type="text" id="title" class="titletext" placeholder="" required>
+          <label for="content" class="label-text">Content</label>
+          <textarea cols="50" rows="15" name="post-details" form="create-post-form"></textarea>
+          <button type="submit" onclick="createPost()" class="createpostbtn">Create</button>
+        </form>
     </div>
   </div>
 </div>
 
-<!-- Place all Javascript for header in this file -->
 <script src="js/header.js"></script>
-<!-- Place all Javascript for rest of the elements in this file -->
 <script src="js/index.js"></script>
 
 </body>
-
 </html>
