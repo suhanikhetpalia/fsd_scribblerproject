@@ -31,22 +31,6 @@
   font-size : 13px;
 }
 
-.middleheader{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  width: 1350px;
-}
-.Mainbutton{
-      margin: 5px;
-      padding : 10px;
-      background-color: #E4D00A	;
-
-
-}
-
-
 
 .modal {
   display: none;
@@ -70,23 +54,23 @@ form {
 }
 
 input {
-  padding: 10px;
+  padding: 8px;
   outline: none;
-  font-family: Abel;
+  font-family: Arial;
 }
 
 .label-text {
-  font-weight: bold;
+  font-weight:  bold;
   margin: 10px 0;
-  font-family: Abel;
+  font-family: Arial;
 }
 
 .modal-content{
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #888;
-  width: 40%;
+  width: 23%;
 }
 
 .modal-head {
