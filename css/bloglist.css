@@ -4,5 +4,108 @@
   height: 100%;
   width : 100%;
   margin : 0px;
-  color : white;
+}
+.allPosts{
+  display: flex;
+}
+.post{
+  position: relative;
+   width: 40%;
+   background: #fff;
+   box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+   margin: 10px;
+   border-radius: 15px;
+}
+.leftPart{
+    width: 15%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.leftPartContent{
+    font-weight: bold;
+    color: black;
+}
+.postContent{
+    font-family: Arial;
+    font-size: 8px;
+    width: 75%;
+    display: table-cell;
+    background-color: #E8E8E8;
+    color: black;
+    border-radius: 15px 15px ;
+    padding: 0 20px;
+
+}
+.postTitle{
+    display: flex;
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    height: 20px;
+}
+.postDescription{
+    display: flex;
+    padding-bottom: 10px;
+    font-size:  19px;
+    height: 70px;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+}
+.postMore{
+   float: right;
+   cursor: pointer;
+   font-size: 18px;
+   padding-bottom: 10px;
+   font-size: 30px;
+}
+.deleteButton{
+  position: relative;
+  top: 10px;
+  left: 390px;
+  cursor : pointer;
+}
+.deleteButtonModal{
+    display: none;
+    position: sticky;
+    z-index: 1;
+}
+.deleteButtonContent{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+.deleteButtonsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.noButton{
+  background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   cursor: pointer;
+   width: 45%;
+}
+.yesButton{
+  background-color:  #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 45%;
+
 }
