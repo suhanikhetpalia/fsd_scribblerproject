@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>ScriBBler</title>
+
+  <link href="../css/index.css" rel="stylesheet">
+  <link href="../css/header.css" rel="stylesheet">
+  <link href="../css/bloglist.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="blogpage">
+<div class="header">
+   <div class="title">
+    <p class="headingname">ScriBBler</p>
+    <p class="subheading">Explore Imagine Create</p>
+   </div>
+   <div class="login">
+    <button class="headerbutton" class="mybtn" type=button onclick="SignInModal()">Sign In</button>
+    <button class="headerbutton" class="mybtn" type=button onclick="SignUpModal()">Sign Up</button>
+  </div>
+</div>
+
+<div>
+     <div class="modal" id="signinmodal">
+       <div class="modal-content">
+          <div class="modal-head">
+          <span onclick="hideSignInModal()" id="close" class="close">&times;</span>
+          <h2 class="modal-title">Welcome Back!</h2>
+          </div>
+          <hr>
+          <form>
+            <label for="username" class="label-text">Username</label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+            <label for="password" class="label-text">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="submit" onclick="signin(username, password)" class="signin-btn">Sign In</button>
+          </form>
+
+          <p class=bottom-banner>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></p>
+      </div>
+    </div>
+</div>
+
+<div>
+    <div class="modal" id="signupmodal">
+      <div class="modal-content">
+        <div class="modal-head">
+        <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
+        <h2 class="modal-title">Get Started</h2>
+        </div>
+        <hr>
+        <form>
+          <label for="fullname" class="label-text">Full name</label>
+          <input type="text" id="fullname" placeholder="Enter Full Name" required>
+          <label for="username" class="label-text">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" required>
+          <label for="password" class="label-text">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" required>
+          <label for="confirmpassword" class="label-text">Confirm Password</label>
+          <input type="password" id="confirm_password" placeholder="Confirm Password" required>
+          <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="signin-btn">Sign up</button>
+        </form>
+      </div>
+    </div>
+</div>
+
+
+<div class="allPosts">
+  <div class="post">
+    <div class="leftPart">
+      <p class="leftPartContent">Jimmi</p>
+    </div>
+  <div class="postContent">
+    <div class="deleteButton">
+      <i class="fa fa-trash" style="font-size:24px"></i>
+    </div>
+    <p class="postTitle">Hello there ! This is Post 1.</p>
+    <p class="postDescription">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+
+    <div class="postMore" onclick="navigateToPost()">
+      <i class="fa fa-ellipsis-h"></i>
+    </div>
+
+    <div class="deleteButtonModal">
+        <div class="deleteButtonContent">
+            <p>Are you sure you want to delete this post?</p>
+        <div class="deleteButtonsContainer">
+            <button class="yesButton">Yes</button>
+            <button class="noButton">No</button>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+    <script src="..\js\bloglist.js">  </script>
+    <script src="..\js\header.js"> </script>
+</body>
+</html>
