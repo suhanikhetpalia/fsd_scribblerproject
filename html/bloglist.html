@@ -73,33 +73,142 @@
 </div>
 
 
-<div class="allPosts">
-  <div class="post">
-    <div class="leftPart">
-      <p class="leftPartContent">Jimmi</p>
-    </div>
-  <div class="postContent">
-    <div class="deleteButton">
-      <i class="fa fa-trash-o" style="font-size:24px"></i>
+<div class="posts">
+    <div class="post">
+        <div class="PersonName">
+            <p>Srishti Gupta</p>
         </div>
-    <p class="postTitle">Hello there ! This is Post 1.</p>
-    <p class="postDescription">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+        <div class="post-content">
+            <div class="post-trash">
+              <i class="fa fa-trash" style="font-size:24px"></i>
+            </div>
+            <p class="title">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+            <p class="postdetails">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
 
-    <div class="postMore" onclick="navigateToPost()">
-      <i class="fa fa-ellipsis-h" ></i>
+        <div class="moreContent" onclick="navigateToPost()">
+            <i class="fa fa-ellipsis-h"></i>
+        </div>
+
+        <div class="trash-modal">
+           <div class="trash-modal-content">
+             <p>Are you sure you want to delete this post?</p>
+                    <div class="trash-buttons-container">
+                        <button class="trash-modal-button-yes">Yes</button>
+                        <button class="trash-modal-button-no">No</button>
+                    </div>
+           </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="post">
+          <div class="PersonName">
+              <p>Colby Fayock</p>
+          </div>
+          <div class="post-content">
+                <div class="post-trash">
+                    <i class="fa fa-trash" style="font-size:24px"></i>
+                </div>
+                <p class="title">What is linting and how can it save you time?</p>
+                <p class="postdetails">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+                <div class="moreContent" onclick="navigateToPost()">
+                    <i class="fa fa-ellipsis-h"></i>
+                </div>
+
+                <div class="trash-modal">
+                    <div class="trash-modal-content">
+                        <p>Are you sure you want to delete this post?</p>
+                        <div class="trash-buttons-container">
+                            <button class="trash-modal-button-yes">Yes</button>
+                            <button class="trash-modal-button-no">No</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
 
-    <div class="deleteButtonModal">
-        <div class="deleteButtonContent">
-            <p>Are you sure you want to delete this post?</p>
-        <div class="deleteButtonsContainer">
-            <button class="yesButton">Yes</button>
-            <button class="noButton">No</button>
+    <div class="post">
+        <div class="PersonName">
+            <p>Yazeed Bzadough</p>
         </div>
+        <div class="post-content">
+                <div class="post-trash">
+                    <i class="fa fa-trash" style="font-size:24px"></i>
+                </div>
+                <p class="title">How to Get More Views on Your Tech Blog</p>
+                <p class="postdetails">If You're a developer with a twitter account,you've already seen everyone and their cat start a blog,Youtube channel,or Patreon. We all want to become stars,or at the very least,a recognizable name in the industry.</p>
+
+                <div class="moreContent" onclick="navigateToPost()">
+                    <i class="fa fa-ellipsis-h"></i>
+                </div>
+
+                <div class="trash-modal">
+                    <div class="trash-modal-content">
+                        <p>Are you sure you want to delete this post?</p>
+                        <div class="trash-buttons-container">
+                            <button class="trash-modal-button-yes">Yes</button>
+                            <button class="trash-modal-button-no">No</button>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
-    </div>
-  </div>
+
+
+    <div class="post">
+          <div class="PersonName">
+              <p>Cedd Burge</p>
+          </div>
+          <div class="post-content">
+                  <div class="post-trash">
+                      <i class="fa fa-trash" style="font-size:24px"></i>
+                  </div>
+                  <p class="title">How to write easily describable code</p>
+                  <p class="postdetails">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                      leads to confusion when discussing the code.</p>
+
+                  <div class="moreContent" onclick="navigateToPost()">
+                      <i class="fa fa-ellipsis-h"></i>
+                  </div>
+                  <div class="trash-modal">
+                      <div class="trash-modal-content">
+                          <p>Are you sure you want to delete this post?</p>
+                          <div class="trash-buttons-container">
+                              <button class="trash-modal-button-yes">Yes</button>
+                              <button class="trash-modal-button-no">No</button>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+      </div>
+
+       <div class="post">
+            <div class="PersonName">
+                <p>Srishti Gupta</p>
+            </div>
+            <div class="post-content">
+                    <div class="post-trash">
+                        <i class="fa fa-trash" style="font-size:24px"></i>
+                    </div>
+                    <p class="title">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                    <p class="postdetails">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                        named xyz.</p>
+
+                    <div class="moreContent" onclick="navigateToPost()">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                    <div class="trash-modal">
+                        <div class="trash-modal-content">
+                            <p>Are you sure you want to delete this post?</p>
+                            <div class="trash-buttons-container">
+                                <button class="trash-modal-button-yes">Yes</button>
+                                <button class="trash-modal-button-no">No</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
 </div>
 
 
